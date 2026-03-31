@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Grace Dagooc{% endblock %} | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Grace Dagooc — IT student and aspiring web developer." />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <a href="{% url 'home' %}" class="navbar-brand">G.D.</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'skills' %}">Skills</a></li>
+      <li><a href="{% url 'projects' %}">Projects</a></li>
+      <li><a href="{% url 'education' %}">Education</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>{% block content %}{% endblock %}</main>
+
+  <footer>
+    <p>Built with Django &nbsp;·&nbsp; Grace Dagooc &nbsp;·&nbsp;
+      <a href="mailto:dagoocgrace9@gmail.com ">dagoocgrace9@gmail.com </a>
+    </p>
+  </footer>
+
+  <script src="{% static 'portfolio/js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<section class="section">
+
+  <p class="section-eyebrow">Things I've built</p>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="proj-card fu">
+      <div class="proj-thumb">◈</div>
+      <div class="proj-body">
+        <h3 class="proj-title">Personal Portfolio Website</h3>
+        <p class="proj-desc">
+          A dynamic personal portfolio website built with Django. Showcases my
+          skills, projects, and education with a custom dark-themed design and
+          responsive layout for all screen sizes.
+        </p>
+        <div class="tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/juandelacruz/portfolio" target="_blank" class="proj-link">
+            ⌥ GitHub
+          </a>
+          <a href="https://juan_delacruz.pythonanywhere.com" target="_blank" class="proj-link">
+            ↗ Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="proj-card fu">
+      <div class="proj-thumb">⊟</div>
+      <div class="proj-body">
+        <h3 class="proj-title">Student Grade Management System</h3>
+        <p class="proj-desc">
+          A web-based system for teachers to record, compute, and view student
+          grades. Features user authentication, grade computation, and a printable
+          report card. Built as a school project using Django and MySQL.
+        </p>
+        <div class="tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Bootstrap</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/juandelacruz/grade-system" target="_blank" class="proj-link">
+            ⌥ GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="proj-card fu">
+      <div class="proj-thumb">◻</div>
+      <div class="proj-body">
+        <h3 class="proj-title">Simple E-Commerce Store</h3>
+        <p class="proj-desc">
+          A basic online store with product listings, shopping cart, and order
+          summary. Built as a learning project to explore Django's ORM, session
+          management, and template inheritance.
+        </p>
+        <div class="tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/juandelacruz/ecommerce" target="_blank" class="proj-link">
+            ⌥ GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="proj-card fu">
+      <div class="proj-thumb">⊕</div>
+      <div class="proj-body">
+        <h3 class="proj-title">Library Book Tracker</h3>
+        <p class="proj-desc">
+          A simple CRUD web app for tracking borrowed and returned library books.
+          Allows librarians to add books, record borrowers, and monitor due dates
+          with overdue alerts.
+        </p>
+        <div class="tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/juandelacruz/library-tracker" target="_blank" class="proj-link">
+            ⌥ GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

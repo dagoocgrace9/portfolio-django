@@ -1,0 +1,36 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero">
+
+  <!-- LEFT: text content -->
+  <div class="hero-left">
+    <p class="hero-tag">// Hello, World!</p>
+
+    <h1 class="hero-name">Grace<br>Dago-oc</h1>
+
+    <p class="hero-tagline">
+      Aspiring Full-Stack Developer &amp; IT student passionate about building
+      clean, functional web applications.
+    </p>
+
+    <div class="hero-btns">
+      <a href="{% url 'projects' %}" class="btn-fill">View Projects →</a>
+      <a href="{% url 'contact' %}" class="btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- RIGHT: avatar - FIXED & CENTERED -->
+  <div class="hero-right">
+    <div class="avatar-wrap">
+      <img src="{% static 'portfolio/profile/grace.jpg' %}"
+           alt="Grace Dago-oc Profile Picture"
+           class="avatar-img">
+    </div>
+  </div>
+
+</div>
+{% endblock %}
